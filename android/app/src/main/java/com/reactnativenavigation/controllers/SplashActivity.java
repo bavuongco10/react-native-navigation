@@ -41,6 +41,7 @@ public abstract class SplashActivity extends AppCompatActivity {
 
         if (NavigationApplication.instance.isReactContextInitialized()) {
             NavigationApplication.instance.getEventEmitter().sendAppLaunchedEvent();
+            finish();
             return;
         }
 
